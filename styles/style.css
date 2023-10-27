@@ -1,12 +1,7 @@
 .body {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-}
-
-.nav {
-  display: flex;
-  gap: 32px;
-  list-style-type: circle;
+  margin: 0 auto;
 }
 
 .nav-list {
@@ -19,12 +14,12 @@
   list-style: none;
 }
 
-.nav-item.nav-item-selected .nav-link {
+.nav-link.nav-link-selected {
   text-decoration: none;
   cursor: default;
 }
 
-.nav.nav-column .nav-list {
+.nav-list.nav-list-column {
   flex-direction: column;
   align-items: center;
   gap: 0;
@@ -174,7 +169,7 @@
   font-family: Raleway, sans-serif;
   font-size: 22px;
   font-weight: 400;
-  line-height: 28px; 
+  line-height: 28px; /* 127.273% */
   text-transform: uppercase;
   align-self: center;
   word-spacing: 18px;
@@ -239,23 +234,26 @@
   justify-content: space-between;
   width: 430px;
   min-height: 450px;
-  flex-shrink: 0;
   padding: 50px 40px;
+  flex-shrink: 0;
   position: relative;
   background-size: 100%;
   z-index: 0;
+  text-decoration: none;
+  background-position: center;
+  background-size: cover;
 }
 
-.lots-card-image {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -2;
-  object-fit: cover;
-  object-position: center;
+.background-image-1 {
+  background-image: url(../images/card-lot-01.jpg)
+}
+
+.background-image-2 {
+  background-image: url(../images/card-lot-02.jpg)
+}
+
+.background-image-3 {
+  background-image: url(../images/card-lot-03.jpg)
 }
 
 .lots-card-overlay {
@@ -296,6 +294,9 @@
 }
 
 .about-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   justify-self: center;
   border-radius: 50%;
   background-color: #000;
@@ -305,9 +306,6 @@
 
 .logo-about-white {
   width: 148px;
-  height: 114px;
-  flex-shrink: 0;
-  margin: 63px 46px 63px 46px;
 }
 .about-content {
   display: flex;
