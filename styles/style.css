@@ -10,16 +10,16 @@
   list-style: circle;
 }
 
-.nav-item.nav-item-selected {
+.nav-item-selected {
   list-style: none;
 }
 
-.nav-link.nav-link-selected {
+.nav-link-selected {
   text-decoration: none;
   cursor: default;
 }
 
-.nav-list.nav-list-column {
+.nav-list-column {
   flex-direction: column;
   align-items: center;
   gap: 0;
